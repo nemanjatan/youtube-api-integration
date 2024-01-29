@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Upload Form</title>
+</head>
+<body>
+<h1>Upload a Video to YouTube</h1>
+<form action="/video/upload" method="post" enctype="multipart/form-data">
+    <label for="videoFile">Video File:</label>
+    <input type="file" name="videoFile" id="videoFile" accept="video/*" required><br>
+    <label for="videoTitle">Title:</label>
+    <input type="text" name="videoTitle" id="videoTitle" required><br>
+    <label for="videoDescription">Description:</label>
+    <textarea name="videoDescription" id="videoDescription" rows="4" required></textarea><br>
+    <input type="submit" value="Upload Video">
+</form>
+</body>
+</html>
